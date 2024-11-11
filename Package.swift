@@ -33,5 +33,5 @@ let package = Package(name: "AFNetworking",
                       products: [.library(name: "AFNetworking",
                                           targets: ["AFNetworking"])],
                       targets: [.target(name: "AFNetworking",
-                                        path: "AFNetworking",
-                                        publicHeadersPath: "AFNetworking")])
+                                        path: "AFNetworking")])
+
