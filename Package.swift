@@ -34,4 +34,14 @@ let package = Package(name: "AFNetworking",
                                           targets: ["AFNetworking"])],
                       targets: [.target(name: "AFNetworking",
                                         path: "AFNetworking",
-                                        publicHeadersPath: "AFNetworking")])
+                                        publicHeadersPath: "AFNetworking",
+                                        cSettings: .headerSearchPaths
+                                       )])
+
+extension Array where Element == CSetting {
+    static var headerSearchPaths: [Element] {
+        [
+            .headerSearchPath("AFNetworking"),
+        ]
+    }
+}
